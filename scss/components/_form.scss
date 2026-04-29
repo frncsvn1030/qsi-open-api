@@ -255,12 +255,13 @@
         top: 50%;
         right: 10px;
         transform: translateY(-50%);
-        display: none;
         padding: 4px;
         background: none;
         border: none;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
-        color: gray(600);
+        color: gray(500);
     }
 }
 

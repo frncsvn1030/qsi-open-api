@@ -147,7 +147,7 @@
     }
 
     /* ── pushes 'chevron-down' icon at right ── */
-    [uk-icon] {
+    .icon-sm {
         margin-left: auto;
         flex-shrink: 0;
         transition: transform 0.2s ease;
@@ -214,11 +214,8 @@
 }
 
 /* ── chevron down rotation ── */
-.uk-open>.uk-accordion-title {
-    [uk-icon="chevron-down"], 
-    .chevron {
-        transform: rotate(180deg);
-    }
+.uk-open>.uk-accordion-title .icon-sm {
+    transform: rotate(180deg);
 }
 
 /* ── body / main content ── */

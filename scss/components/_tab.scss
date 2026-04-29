@@ -9,6 +9,7 @@
   border-radius: radius(md);
   display: inline-flex;
   width: 100%;
+  gap: gap(sm);
 
   &.uk-tab {
     margin: 0;
@@ -36,7 +37,7 @@
 
       &:hover {
         color: text(secondary);
-        background: gray(50);
+        background: color(light-hover);
       }
     }
 
