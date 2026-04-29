@@ -246,47 +246,6 @@
                                 </svg>
                               </div>
                             </div>
-
-                            <!-- roster modal -->
-                            <div id="roster-modal" uk-modal>
-                              <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical modal">
-                                <button class="uk-modal-close-default" type="button" uk-close></button>
-                                <h4 class="uk-modal-title title">Select Rosters</h4>
-
-                                <!-- Adult Sizes -->
-                                <div class="size-section">
-                                  <p class="size-section__heading">Adult Sizes</p>
-                                  <div class="pill-group" id="adultPills"></div>
-
-                                  <div class="form-input is-error">
-                                    <label>Custom size (optional)</label>
-                                    <input type="text" class="uk-input input is-sm" placeholder="e.g., 6XL, Custom"/>
-                                    <span class="form-validation">Please enter a valid adult size.</span>
-                                  </div>
-                                </div>
-
-                                <!-- Youth Sizes -->
-                                <div class="size-section">
-                                  <p class="size-section__heading">Youth Sizes</p>
-                                  <div class="pill-group" id="youthPills"></div>
-
-                                  <div class="form-input is-error">
-                                    <label>Custom size (optional)</label>
-                                    <input type="text" class="uk-input input is-sm" placeholder="e.g., Y2XL, Custom"/>
-                                    <span class="form-validation">Please enter a valid youth size.</span>
-                                  </div>
-                                </div>
-
-                                <div class="uk-grid uk-grid-small uk-child-width-1-2@m" uk-grid>
-                                  <div>
-                                    <button class="uk-button button button--default uk-width-1-1 uk-modal-close">Cancel</button>
-                                  </div>
-                                  <div>
-                                    <button class="uk-button button button--primary uk-width-1-1" onclick="updateAndClose()">Add</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </li>
                         </ul>
                       </div>
@@ -362,9 +321,14 @@
         </div>
       </div>
     </div>
+
+    <!-- Roster Modal -->
+    <RosterModal />
   </div>
 </template>
 
 <script setup>
 import { ArrowRightIcon } from '@heroicons/vue/24/outline'
+
+import RosterModal from '@/Components/Modals/RosterModal.vue'
 </script>
