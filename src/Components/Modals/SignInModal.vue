@@ -17,8 +17,15 @@
           </label>
           <div class="form-control">
             <div class="password-wrapper">
-              <input type="password" class="uk-input input" placeholder="Password" />
-              <button type="button" class="password-toggle" uk-icon="icon: eye-slash; ratio: 0.8"></button>
+              <input
+                :type="showPassword ? 'text' : 'password'"
+                class="uk-input input"
+                placeholder="Password"
+              />
+              <button type="button" class="password-toggle" @click="togglePassword">
+                <EyeSlashIcon v-if="showPassword" class="icon" />
+                <EyeIcon v-else class="icon" />
+              </button>
             </div>
             <span class="form-validation">Validation text here.</span>
           </div>
@@ -39,7 +46,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import PlainModal from './PlainModal.vue';
+import { EyeIcon, EyeSlashIcon } from '@heroicons/vue/24/outline';
+
+// Password visibility
+const showPassword = ref(false)
+
+const togglePassword = () => {
+  showPassword.value = !showPassword.value
+}
 </script>
 
 <style scoped>
