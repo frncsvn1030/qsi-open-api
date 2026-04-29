@@ -1,0 +1,25 @@
+@use "../variables" as *;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+
+.section {
+    @include flex-column;
+    gap: 16px;
+
+    &--has-bg {
+        padding: 16px;
+        background-color: color(section-bg);
+        // border: 1px solid color(border);
+        border-radius: radius(md);
+    }
+
+    &--has-border {
+        padding: 16px;
+        border: 1px solid color(border);
+        border-radius: radius(md);
+    }
+}
+
+
+

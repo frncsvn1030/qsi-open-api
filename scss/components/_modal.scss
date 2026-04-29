@@ -1,0 +1,46 @@
+@use "../variables" as *;
+@use "../functions" as *;
+@use "../mixins" as *;
+
+
+.modal,
+.uk-modal-dialog.modal {
+    border-radius: radius(lg);
+    width: 100%;
+    max-width: 432px !important; 
+    padding: gap(3xl);
+
+    .title {
+        @include flex-horizontal-center;
+        font-size: font-size(xl);
+        font-weight: font-weight(semi-bold);
+        margin: 0 0 20px 0;
+    }
+
+    .description {
+        @include flex-horizontal-center;
+        font-size: font-size(sm);
+        margin: 0 0 20px 0;
+    }
+}
+
+// Reset Password Modal Success
+.password-success {
+  &-alert {
+    background-color: #ECFDF5;
+    color: #047857;
+    border: 1px solid #BEE6DD;
+    border-radius: radius(md);
+    padding: 20px 24px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  &-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
