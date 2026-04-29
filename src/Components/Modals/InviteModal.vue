@@ -24,8 +24,9 @@
           </div>
         </div>
 
+        <!-- Note: Button should stay disabled until fields are filled -->
         <div class="form-actions uk-child-width-expand">
-          <button class="uk-button button button--primary" type="submit" disabled>Send Invite</button>
+          <button class="uk-button button button--primary" type="submit">Send Invite</button>
         </div>
       </form>
     </div>
