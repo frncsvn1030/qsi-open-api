@@ -16,13 +16,13 @@
 
 <script setup>
 // Components
-import Header from '@/Components/Header.vue';
-import Banner from '@/Components/HomePage/Banner.vue';
+import Header from '@/layouts/Header.vue';
+import Banner from '@/components/blocks/banners/Banner.vue';
 
 // Modals
-import SignInModal from '@/Components/Modals/SignInModal.vue';
-import InviteModal from '@/Components/Modals/InviteModal.vue';
-import ForgotPasswordModal from '@/Components/Modals/ForgotPasswordModal.vue';
+import SignInModal from '@/components/modals/SignInModal.vue';
+import InviteModal from '@/components/modals/InviteModal.vue';
+import ForgotPasswordModal from '@/components/modals/ForgotPasswordModal.vue';
 </script>
 
 <style scoped>

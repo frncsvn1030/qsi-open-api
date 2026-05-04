@@ -57,7 +57,7 @@
 </template>
 
 <script setup>
-import DefaultLayout from '@/Layouts/DefaultLayout.vue';
-import EndpointRequest from '@/Components/ApiEndpoint/ApiRequestPanel.vue';    
-import EndpointResponse from '@/Components/ApiEndpoint/ApiResponsePanel.vue';
+import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import EndpointRequest from '@/components/blocks/api-endpoint/ApiRequestPanel.vue';    
+import EndpointResponse from '@/components/blocks/api-endpoint/ApiResponsePanel.vue';
 </script>

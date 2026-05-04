@@ -24,12 +24,12 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-import Header from '@/Components/Header.vue'
-import Sidebar from '@/Components/Sidebar.vue'
+import Header from '@/layouts/Header.vue'
+import Sidebar from '@/layouts/Sidebar.vue'
 
-import SignInModal from '@/Components/Modals/SignInModal.vue';
-import InviteModal from '@/Components/Modals/InviteModal.vue';
-import ForgotPasswordModal from '@/Components/Modals/ForgotPasswordModal.vue';
+import SignInModal from '@/components/modals/SignInModal.vue';
+import InviteModal from '@/components/modals/InviteModal.vue';
+import ForgotPasswordModal from '@/components/modals/ForgotPasswordModal.vue';
 
 
 // Sidebar script

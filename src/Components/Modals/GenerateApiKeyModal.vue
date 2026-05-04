@@ -33,5 +33,5 @@
 </template>
 
 <script setup>
-import PlainModal from './PlainModal.vue';
+import PlainModal from '@/components/common/PlainModal.vue';
 </script>

@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Index from './Pages/Index.vue'
-import ApiEndpoint from './Pages/ApiEndpoint.vue'
-import ApiKeys from './Pages/ApiKeys.vue'
+import Index from '@/pages/Index.vue'
+import ApiEndpoint from '@/pages/ApiEndpoint.vue'
+import ApiKeys from '@/pages/ApiKeys.vue'
 
 const routes = [
   { path: '/', name: 'Index', component: Index },

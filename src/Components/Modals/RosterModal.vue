@@ -67,7 +67,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import PlainModal from './PlainModal.vue'
+import PlainModal from '@/components/common/PlainModal.vue'
 
 // Adult and youth sizes data
 const adultSizes = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL']
