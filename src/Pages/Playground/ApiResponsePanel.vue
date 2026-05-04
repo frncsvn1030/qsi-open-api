@@ -129,3 +129,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  // Re-apply syntax highlighting after component mounts
+  if (window.hljs) {
+    window.hljs.highlightAll()
+  }
+})
+</script>

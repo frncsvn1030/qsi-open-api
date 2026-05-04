@@ -148,7 +148,8 @@
                               <span class="meta">Item #1</span>
                             </div>
                             <button class="uk-button button button--remove button--xs">
-                              <span uk-icon="trash"></span> Remove
+                              <TrashIcon class="icon-xs" />
+                              Remove
                             </button>
                           </div>
                           <hr>
@@ -328,7 +329,7 @@
 </template>
 
 <script setup>
-import { ArrowRightIcon } from '@heroicons/vue/24/outline'
+import { ArrowRightIcon, TrashIcon } from '@heroicons/vue/24/outline'
 
 import RosterModal from '@/Components/Modals/RosterModal.vue'
 </script>
