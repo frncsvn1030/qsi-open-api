@@ -57,10 +57,20 @@
       </div>
     </nav>
   </header>
+
+
+  <!------------------------- Modals ---------------------------->
+  <SignInModal />
+  <InviteModal />
+  <ForgotPasswordModal />
 </template>
 
 <script setup>
 import { HomeIcon, UserPlusIcon, CodeBracketIcon, UserIcon } from '@heroicons/vue/24/outline'
+
+import SignInModal from '@/components/modals/SignInModal.vue'
+import InviteModal from '@/components/modals/InviteModal.vue'
+import ForgotPasswordModal from '@/components/modals/ForgotPasswordModal.vue'
 
 defineProps({
   hasSidebar: Boolean

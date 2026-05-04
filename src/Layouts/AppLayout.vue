@@ -13,11 +13,6 @@
             </main>
 
         </div> 
-        
-        <!------------------------- Modals ---------------------------->
-        <SignInModal/>
-        <InviteModal/>
-        <ForgotPasswordModal/>
     </div>
 </template>
 
@@ -26,11 +21,6 @@ import { ref, onMounted } from 'vue'
 
 import Header from '@/layouts/Header.vue'
 import Sidebar from '@/layouts/Sidebar.vue'
-
-import SignInModal from '@/components/modals/SignInModal.vue';
-import InviteModal from '@/components/modals/InviteModal.vue';
-import ForgotPasswordModal from '@/components/modals/ForgotPasswordModal.vue';
-
 
 // Sidebar script
 const sidebarOpen = ref(true)
