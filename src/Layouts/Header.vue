@@ -27,55 +27,31 @@
       <div class="nav-links">
         <!-- Home -->
         <router-link class="nav-link" to="/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 10.5L12 3l9 7.5" />
-            <path d="M5 10v10h14V10" />
-            <path d="M9 21v-6h6v6" />
-          </svg>
+          <HomeIcon class="icon-xs" />
           <span>Home</span>
         </router-link>
 
         <!-- Send Invite (Only admin has this) -->
         <a class="nav-link" uk-toggle="target: #invite-modal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="22" y1="2" x2="11" y2="13" />
-            <polygon points="22 2 15 22 11 13 2 9 22 2" />
-          </svg>
+          <UserPlusIcon class="icon-xs" />
           <span>Send Invite</span>
         </a>
 
         <!-- API -->
         <router-link class="nav-link" to="/api-endpoint">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="4" y="4" width="6" height="6" rx="1" />
-            <rect x="14" y="4" width="6" height="6" rx="1" />
-            <rect x="9" y="14" width="6" height="6" rx="1" />
-            <path d="M10 7h4" />
-            <path d="M12 10v4" />
-          </svg>
+          <CodeBracketIcon class="icon-xs" />
           <span>API</span>
         </router-link>
 
         <!-- Sign In -->
         <a class="nav-link sign-in" uk-toggle="target: #signin-modal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21a8 8 0 0 0-16 0" />
-            <circle cx="12" cy="8" r="4" />
-          </svg>
+          <UserIcon class="icon-xs" />
           <span>Sign in</span>
         </a>
 
         <!-- Signed In -->
         <!-- <a class="nav-link" uk-toggle="target: #signin-modal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21a8 8 0 0 0-16 0" />
-            <circle cx="12" cy="8" r="4" />
-          </svg>
+          <UserIcon class="icon-xs" />
           <span>Test User</span>
         </a> -->
       </div>
@@ -84,6 +60,8 @@
 </template>
 
 <script setup>
+import { HomeIcon, UserPlusIcon, CodeBracketIcon, UserIcon } from '@heroicons/vue/24/outline'
+
 defineProps({
   hasSidebar: Boolean
 })

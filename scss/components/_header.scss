@@ -56,11 +56,8 @@ header {
                 color: color(primary);
             }
 
-            svg {
-                width: 15px;
-                height: 15px;
-                stroke: currentColor;
-                flex-shrink: 0;
+            .icon-xs {
+                stroke-width: 2px;
             }
 
             // style for when the user has not logged in yet (button look for link)
