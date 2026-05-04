@@ -1,5 +1,5 @@
 <template>
-    <DefaultLayout>
+    <AppLayout>
         <div class="container-custom">
             <div class="api-keys uk-flex uk-flex-center">
                 <div class="card uk-width-4-5 uk-width-3-4@xl">
@@ -59,12 +59,12 @@
 
             <GenerateApiKeyModal />
         </div>
-    </DefaultLayout>
+    </AppLayout>
 </template>
 
 <script setup>
 import { PlusIcon } from '@heroicons/vue/24/outline';
-import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 import ApiKeyList from '@/components/blocks/api-keys/ApiKeyList.vue';
 import GenerateApiKeyModal from '@/components/modals/GenerateApiKeyModal.vue';
 

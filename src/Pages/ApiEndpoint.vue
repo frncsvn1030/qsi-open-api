@@ -1,5 +1,5 @@
 <template>
-    <DefaultLayout>
+    <AppLayout>
         <div class="container-custom">
 
             <div class="api-endpoint">
@@ -53,11 +53,11 @@
             </div>
 
         </div>
-    </DefaultLayout>
+    </AppLayout>
 </template>
 
 <script setup>
-import DefaultLayout from '@/layouts/DefaultLayout.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 import EndpointRequest from '@/components/blocks/api-endpoint/ApiRequestPanel.vue';    
 import EndpointResponse from '@/components/blocks/api-endpoint/ApiResponsePanel.vue';
 </script>
