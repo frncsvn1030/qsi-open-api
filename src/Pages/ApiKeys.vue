@@ -65,7 +65,7 @@
 <script setup>
 import { PlusIcon } from '@heroicons/vue/24/outline';
 import DefaultLayout from '@/Layouts/DefaultLayout.vue';
-import ApiKeyList from './ApiKeyList.vue';
+import ApiKeyList from '@/Components/ApiKeys/ApiKeyList.vue';
 import GenerateApiKeyModal from '@/Components/Modals/GenerateApiKeyModal.vue';
 
 const stagingKeys = [

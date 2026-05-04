@@ -58,6 +58,6 @@
 
 <script setup>
 import DefaultLayout from '@/Layouts/DefaultLayout.vue';
-import EndpointRequest from './ApiRequestPanel.vue';    
-import EndpointResponse from './ApiResponsePanel.vue';
+import EndpointRequest from '@/Components/ApiEndpoint/ApiRequestPanel.vue';    
+import EndpointResponse from '@/Components/ApiEndpoint/ApiResponsePanel.vue';
 </script>

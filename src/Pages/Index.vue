@@ -17,7 +17,7 @@
 <script setup>
 // Components
 import Header from '@/Components/Header.vue';
-import Banner from '@/Pages/HomePage/Banner.vue';
+import Banner from '@/Components/HomePage/Banner.vue';
 
 // Modals
 import SignInModal from '@/Components/Modals/SignInModal.vue';
