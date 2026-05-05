@@ -195,7 +195,7 @@
         <li>
             <router-link to="" class="s-item active">
                 <span class="left">
-                    <UserIcon />
+                    <UserIcon class="icon-sm" />
                     My Profile
                 </span>
             </router-link>
@@ -205,7 +205,7 @@
         <li>
             <router-link to="" class="s-item">
                 <span class="left">
-                    <KeyIcon />
+                    <KeyIcon class="icon-sm" />
                     Application Token Manager 
                 </span>
             </router-link>
@@ -215,7 +215,7 @@
         <li>
             <router-link to="" class="s-item">
                 <span class="left">
-                    <ClipboardDocumentListIcon />
+                    <ClipboardDocumentListIcon class="icon-sm" />
                     Orders
                 </span>
             </router-link>
