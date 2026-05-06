@@ -331,5 +331,5 @@
 <script setup>
 import { ArrowRightIcon, TrashIcon } from '@heroicons/vue/24/outline'
 
-import RosterModal from '@/Components/Modals/RosterModal.vue'
+import RosterModal from '@/components/modals/RosterModal.vue'
 </script>
