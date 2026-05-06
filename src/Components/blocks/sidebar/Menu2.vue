@@ -193,7 +193,7 @@
 
         <!-- My Profile -->
         <li>
-            <router-link to="" class="s-item active">
+            <router-link to="/my-profile" class="s-item active">
                 <span class="left">
                     <UserIcon class="icon-sm" />
                     My Profile
@@ -203,7 +203,7 @@
 
         <!-- Application Token Manager -->
         <li>
-            <router-link to="" class="s-item">
+            <router-link to="/application-token-manager" class="s-item">
                 <span class="left">
                     <KeyIcon class="icon-sm" />
                     Application Token Manager 
@@ -213,7 +213,7 @@
 
         <!-- Orders -->
         <li>
-            <router-link to="" class="s-item">
+            <router-link to="/orders" class="s-item">
                 <span class="left">
                     <ClipboardDocumentListIcon class="icon-sm" />
                     Orders
