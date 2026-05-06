@@ -13,6 +13,7 @@
                                         :class="{ 'is-md': apiKey.label === 'Secret' }"
                                         :type="showKeys ? 'text' : 'password'"
                                         :value="apiKey.value"
+                                        readonly
                                     />
                                     <span class="form-validation">{{ apiKey.validation }}</span>
                                 </div>
