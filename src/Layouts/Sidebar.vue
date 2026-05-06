@@ -29,18 +29,18 @@
             <!-- menus -->
 
             <!-- api playground -->
-            <Menu1 /> 
+            <MenuAccordion /> 
 
             <!-- account settings -->
-            <Menu2 hidden />
+            <Menu hidden />
             
         </nav>
     </aside>
 </template>
 
 <script setup>
-import Menu1 from '@/components/blocks/sidebar/Menu1.vue';
-import Menu2 from '@/components/blocks/sidebar/Menu2.vue';
+import MenuAccordion from '@/components/blocks/sidebar/MenuAccordion.vue';
+import Menu from '@/components/blocks/sidebar/Menu.vue';
 
 defineProps({
   open: {
