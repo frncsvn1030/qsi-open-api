@@ -31,7 +31,7 @@ npm run build
 ```bash
 npm run preview
 ```
-## 🛠️ Development
+## Development
 
 ### Recommended IDE Setup
 
@@ -89,24 +89,28 @@ public/                   # Static assets
 
 ## 🎨 Component Usage
 
-### Layout Components
+### Reusable Layout Wrappers
 
-**AppLayout.vue**
-- Includes collapsible sidebar, header, and main content area
+`AppLayout.vue`
+- Used for pages that includes sidebar, header, and main content.
 
-**DefaultLayout.vue**
-- Used for pages (signup, reset password, generate api key, etc.)
-- Simple header-only layout without sidebar navigation
-
-### Form Components
-
-**Form Validation**
+`DefaultLayout.vue`
+- Used for pages without the sidebar. 
+- Header and main content only.
+### Form Validation
 Add validation states to form inputs:
 ```vue
-<div class="form-input is-success">  <!-- Green border + validation text -->
-<div class="form-input is-error">    <!-- Red border + validation text -->
-<div class="form-input is-warning">  <!-- Yellow border + validation text -->
+<!-- Multiple validation states -->
+<div class="form-input is-success">  <!-- Green: valid input -->
+<div class="form-input is-error">    <!-- Red: invalid input -->
+<div class="form-input is-warning">  <!-- Yellow: warning state -->
 ```
+
+**Form Components:**
+- Input fields use UIKit classes (`uk-input input`)
+- Buttons support multiple variants (`button--primary`, `button--default`, `button--soft`)
+- Select dropdowns include custom chevron icons for better UX
+
 
 ### Notifications
 
@@ -123,4 +127,8 @@ Use the Notification component for user feedback:
   body="Failed to update profile."
 />
 ```
-Note: adding the **title** prop is not necessary as it updates based on its type by default unless you want different title message
+
+**Notification Logic:**
+- **Dynamic Icons**: Component automatically selects icons based on type (CheckBadgeIcon for success, ExclamationTriangleIcon for warning, XCircleIcon for danger)
+- **Computed Classes**: Uses Vue computed properties to generate UIKit classes (`uk-alert-${type}`) and custom notification classes
+- **Default Titles**: If no title prop provided, automatically maps type to friendly names ("Success", "Warning", "Error")
