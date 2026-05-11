@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <SidebarLayout>
         <div class="container-custom">
             <div class="api-keys uk-flex uk-flex-center">
                 <div class="card uk-width-4-5 uk-width-3-4@xl">
@@ -59,12 +59,12 @@
 
             <GenerateApiKeyModal />
         </div>
-    </AppLayout>
+    </SidebarLayout>
 </template>
 
 <script setup>
 import { PlusIcon } from '@heroicons/vue/24/outline';
-import AppLayout from '@/layouts/AppLayout.vue';
+import SidebarLayout from '@/layouts/SidebarLayout.vue';
 import ApiKeyList from '@/components/blocks/api-keys/ApiKeyList.vue';
 import GenerateApiKeyModal from '@/components/modals/GenerateApiKeyModal.vue';
 

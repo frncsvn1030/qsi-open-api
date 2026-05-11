@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <SidebarLayout>
         <div class="container-custom">
 
             <!-- Profile page content starts here -->
@@ -84,12 +84,12 @@
             <!-- Change Password Modal -->
             <ChangePasswordModal />
         </div>
-    </AppLayout>
+    </SidebarLayout>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import AppLayout from '@/layouts/AppLayout.vue';
+import SidebarLayout from '@/layouts/SidebarLayout.vue';
 import ChangePasswordModal from '@/components/modals/ChangePasswordModal.vue';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/vue/24/outline'
 

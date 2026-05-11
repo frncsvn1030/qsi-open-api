@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <SidebarLayout>
         <div class="container-custom">
             <div class="app-token-manager-page">
                 <div class="page-header">
@@ -86,12 +86,12 @@
                 </div>
             </div>
         </div>
-    </AppLayout>
+    </SidebarLayout>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
-import AppLayout from '@/layouts/AppLayout.vue';
+import SidebarLayout from '@/layouts/SidebarLayout.vue';
 
 
 // inital script (pagination + table values)

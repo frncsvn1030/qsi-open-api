@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <SidebarLayout>
         <div class="container-custom">
 
             <div class="api-endpoint">
@@ -53,11 +53,11 @@
             </div>
 
         </div>
-    </AppLayout>
+    </SidebarLayout>
 </template>
 
 <script setup>
-import AppLayout from '@/layouts/AppLayout.vue';
+import SidebarLayout from '@/layouts/SidebarLayout.vue';
 import EndpointRequest from '@/components/blocks/api-endpoint/ApiRequestPanel.vue';    
 import EndpointResponse from '@/components/blocks/api-endpoint/ApiResponsePanel.vue';
 </script>

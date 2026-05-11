@@ -1,5 +1,5 @@
 <template>
-    <AppLayout>
+    <SidebarLayout>
         <div class="container-custom">
             <div class="orders-page">
 
@@ -63,12 +63,12 @@
                 </div>
             </div>
         </div>
-    </AppLayout>
+    </SidebarLayout>
 </template>
 
 <script setup>
 import { ref, computed } from 'vue';
-import AppLayout from '@/layouts/AppLayout.vue';
+import SidebarLayout from '@/layouts/SidebarLayout.vue';
 import EndpointResponse from '@/components/blocks/api-endpoint/ApiResponsePanel.vue';
 
 const rowsPerPage = ref(10);

@@ -68,7 +68,7 @@ src/
 │   ├── common/           # Shared utility components
 │   └── modals/           # Modal dialog components
 ├── layouts/              # Layout wrapper components
-│   ├── AppLayout.vue     # Pages with header and sidebar
+│   ├── SidebarLayout.vue     # Pages with header and sidebar
 │   ├── DefaultLayout.vue # Pages with header only
 │   ├── Header.vue       
 │   └── Sidebar.vue      
@@ -91,7 +91,7 @@ public/                   # Static assets
 
 ### Reusable Layout Wrappers
 
-`AppLayout.vue`
+`SidebarLayout.vue`
 - Used for pages that includes sidebar, header, and main content.
 
 `DefaultLayout.vue`
